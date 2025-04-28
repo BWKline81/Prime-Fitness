@@ -1,0 +1,84 @@
+* {
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+  height: 105%;
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container:hover {
+  height: 125%;
+  box-shadow: 2px 2px 10px 2px white;
+}
+
+.navbar {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar nav {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar_link:hover {
+  text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
+    0 0 10px grey;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.heading {
+  width: 25%;
+  height: 75%;
+  background-image: url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1");
+  background-position: center;
+  background-size: cover;
+}
+
+.heading:hover {
+  transform: scale(1.1);
+}

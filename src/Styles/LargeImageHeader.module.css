@@ -1,0 +1,133 @@
+.overlay {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.heading_container {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  pointer-events: auto;
+}
+
+.heading_container h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 2.5rem;
+  pointer-events: auto;
+  position: relative;
+  z-index: 101;
+  display: inline-block;
+}
+
+.heading_container:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
+    0 0 10px grey;
+}
+
+.button_container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  pointer-events: auto;
+  z-index: 100;
+}
+
+.button_container_link {
+  width: 50%;
+  height: 80%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+  border-radius: 50px;
+  pointer-events: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+}
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 48px;
+}
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+}
