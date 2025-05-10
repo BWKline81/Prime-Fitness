@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
-function Contact() {
+function ContactSection() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -12,7 +12,9 @@ function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="fade-down">
-        <h1 className={styles.heading}>Contact Us!</h1>
+        <Link to="/contact" className={styles.heading_link}>
+          <h1 className={styles.heading}>Contact Us →</h1>
+        </Link>
         <div
           className={styles.line}
           data-aos="fade-up"
@@ -26,7 +28,13 @@ function Contact() {
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <i class="fa-solid fa-envelope"></i>
+            <Link
+              to="mailto:primeperformanceclub@outlook.com"
+              target="_blank"
+              className={styles.button_container_link}
+            >
+              <i class="fa-solid fa-envelope" id="instagram_link"></i>
+            </Link>
             <p>primeperformanceclub@outlook.com</p>
           </li>
           <li
@@ -58,4 +66,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactSection;

@@ -28,7 +28,7 @@
   transform: scale(1.1);
   text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
     0 0 10px grey;
-  cursor: default;
+  cursor: pointer;
 }
 
 .line {
@@ -81,4 +81,8 @@
   text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
     0 0 10px grey;
   cursor: default;
+}
+
+.heading_link {
+  text-decoration: none;
 }

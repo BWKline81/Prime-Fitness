@@ -42,7 +42,7 @@ function LargeImageHeader() {
       ></video>
       <div className={styles.overlay}>
         <div className={styles.heading_container}>
-          <h2>Schedule a Free Consultation Today!</h2>
+          <h2>Join Us Today!</h2>
         </div>
         <div className={styles.button_container}>
           <Link

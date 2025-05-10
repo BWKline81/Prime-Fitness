@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef, createContext } from "react";
 import styles from "../Styles/Home.module.css";
 import Header from "../Components/Header";
 import LargeImageHeader from "../Components/LargeImageHeader";
-import AboutUs from "../Components/AboutUs";
-import Coaches from "../Components/Coaches";
-import Contact from "../Components/Contact";
+import AboutUsSection from "../Components/AboutUsSection";
+import CoachesSection from "../Components/CoachesSection";
+import ContactSection from "../Components/ContactSection";
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -67,13 +67,13 @@ function Home() {
                 <LargeImageHeader />
               </div>
               <div className={styles.about_wrapper} ref={aboutRef}>
-                <AboutUs />
+                <AboutUsSection />
               </div>
               <div className={styles.coaches_wraper} ref={coachesRef}>
-                <Coaches />
+                <CoachesSection />
               </div>
               <div className={styles.contact_wrapper} ref={contactRef}>
-                <Contact />
+                <ContactSection />
               </div>
               <div className={styles.buffer}></div>
               <Footer />

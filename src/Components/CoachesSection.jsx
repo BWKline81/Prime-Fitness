@@ -2,13 +2,10 @@ import React, { useEffect } from "react";
 import styles from "../Styles/Coaches.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Coach from "../Components/Coach";
-import GarretImage from "../assets/Garret.png";
-import MitchellImage from "../assets/Mitchell.png";
-import NickImage from "../assets/Nick.png";
-import KayleighImage from "../assets/Kayleigh.png";
+import Coach from "./Coach";
+import { Link } from "react-router-dom";
 
-function Coaches() {
+function CoachesSection() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -16,7 +13,9 @@ function Coaches() {
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="zoom-in">
-        <h1 className={styles.heading}>Meet Our Coaches</h1>
+        <Link to="/coaches" className={styles.heading_link}>
+          <h1 className={styles.heading}>Meet Our Coaches →</h1>
+        </Link>
         <div
           className={styles.line}
           data-aos="zoom-out"
@@ -30,9 +29,9 @@ function Coaches() {
           data-aos-delay="1000"
         >
           <Coach
-            image={GarretImage}
-            name="Garret Cumbie"
-            description="Co-Owner"
+            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            name="Coach"
+            description="Description"
           />
         </div>
 
@@ -42,9 +41,9 @@ function Coaches() {
           data-aos-delay="500"
         >
           <Coach
-            image={MitchellImage}
-            name="Mitchell Jules"
-            description="Co-Owner"
+            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            name="Coach"
+            description="Description"
           />
         </div>
 
@@ -54,9 +53,9 @@ function Coaches() {
           data-aos-delay="500"
         >
           <Coach
-            image={NickImage}
-            name="Nick La Pierre"
-            description="NASM-CPT"
+            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            name="Coach"
+            description="Description"
           />
         </div>
 
@@ -66,9 +65,9 @@ function Coaches() {
           data-aos-delay="1000"
         >
           <Coach
-            image={KayleighImage}
-            name="Kayleigh Ducharme"
-            description="NASM-CPT"
+            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            name="Coach"
+            description="Description"
           />
         </div>
       </div>
@@ -76,4 +75,4 @@ function Coaches() {
   );
 }
 
-export default Coaches;
+export default CoachesSection;

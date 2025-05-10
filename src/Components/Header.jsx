@@ -2,18 +2,10 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../Styles/Header.module.css";
-import {
-  HomeContext,
-  AboutContext,
-  CoachesContext,
-  ContactContext,
-} from "../Pages/Home";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
-  const homeRef = useRef(useContext(HomeContext));
-  const aboutRef = useRef(useContext(AboutContext));
-  const coachesRef = useRef(useContext(CoachesContext));
-  const contactRef = useRef(useContext(ContactContext));
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -35,10 +27,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  console.log("Clicked");
-                  homeRef.current.homeRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  navigate("/");
                 }}
               >
                 <i className="fa-solid fa-house"></i>
@@ -53,14 +42,11 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  console.log("Clicked");
-                  aboutRef.current.aboutRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  navigate("/training");
                 }}
               >
-                <i className="fa-solid fa-address-card"></i>
-                About Us
+                <i className="fa-solid fa-dumbbell"></i>
+                Training
               </button>
             </li>
           </ul>
@@ -82,13 +68,10 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  console.log("Clicked");
-                  coachesRef.current.coachesRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  navigate("/coaches");
                 }}
               >
-                <i class="fa-solid fa-dumbbell"></i>
+                <i class="fa-solid fa-user"></i>
                 Coaches
               </button>
             </li>
@@ -100,10 +83,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  console.log("Clicked");
-                  contactRef.current.contactRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  navigate("/contact");
                 }}
               >
                 <i className="fa-solid fa-phone"></i>

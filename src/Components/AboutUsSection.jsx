@@ -2,16 +2,19 @@ import React, { useEffect } from "react";
 import styles from "../Styles/AboutUs.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutPart from "../Components/AboutPart";
+import AboutPart from "./AboutPart";
+import { Link } from "react-router-dom";
 
-function AboutUs() {
+function AboutUsSection() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="fade-down">
-        <h1 className={styles.heading}>About Us</h1>
+        <Link to="/training" className={styles.heading_link}>
+          <h1 className={styles.heading}>Training →</h1>
+        </Link>
         <div
           className={styles.line}
           data-aos="fade-up"
@@ -75,4 +78,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default AboutUsSection;
