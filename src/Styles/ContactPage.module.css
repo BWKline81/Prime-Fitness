@@ -71,9 +71,10 @@
 
 .line {
   width: 50%;
-  height: 5px;
+  height: 2px;
   background-color: white;
-  border-radius: 5px;
+  box-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
+    0 0 10px grey;
 }
 
 .contact_information {
