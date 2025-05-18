@@ -9,11 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="training" element={<TrainingPage />} />
-        <Route path="coaches" element={<CoachesPage />} />
-        <Route path="contact" element={<ContactPage />} />
+        <Route path="/Prime-Fitness/" element={<Home />} />
+        <Route path="/Prime-Fitness/training" element={<TrainingPage />} />
+        <Route path="/Prime-Fitness/coaches" element={<CoachesPage />} />
+        <Route path="/Prime-Fitness/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -9,7 +9,7 @@ function NotFound() {
       <i className="fa-solid fa-triangle-exclamation"></i>
       <h1>404</h1>
       <h2>Page Not Found</h2>
-      <button onClick={() => navigate("/")}>Return Home</button>
+      <button onClick={() => navigate("/Prime-Fitness/")}>Return Home</button>
     </div>
   );
 }
