@@ -9,10 +9,10 @@ function App() {
   return (
     <HashRouter basename="/Prime-Fitness/">
       <Routes>
-        <Route path="/Prime-Fitness/" element={<Home />} />
-        <Route path="/Prime-Fitness/training" element={<TrainingPage />} />
-        <Route path="/Prime-Fitness/coaches" element={<CoachesPage />} />
-        <Route path="/Prime-Fitness/contact" element={<ContactPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/training" element={<TrainingPage />} />
+        <Route path="/coaches" element={<CoachesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
