@@ -27,7 +27,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  navigate("/");
+                  navigate("/Prime-Fitness/");
                 }}
               >
                 <i className="fa-solid fa-house"></i>
@@ -42,7 +42,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  navigate("/training");
+                  navigate("/Prime-Fitness/training");
                 }}
               >
                 <i className="fa-solid fa-dumbbell"></i>
@@ -68,7 +68,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  navigate("/coaches");
+                  navigate("/Prime-Fitness/coaches");
                 }}
               >
                 <i class="fa-solid fa-user"></i>
@@ -83,7 +83,7 @@ function Header() {
               <button
                 className={styles.navbar_link}
                 onClick={() => {
-                  navigate("/contact");
+                  navigate("/Prime-Fitness/contact");
                 }}
               >
                 <i className="fa-solid fa-phone"></i>

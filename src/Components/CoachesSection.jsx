@@ -13,7 +13,7 @@ function CoachesSection() {
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="zoom-in">
-        <Link to="/coaches" className={styles.heading_link}>
+        <Link to="/Prime-Fitness/coaches" className={styles.heading_link}>
           <h1 className={styles.heading}>Meet Our Coaches →</h1>
         </Link>
         <div

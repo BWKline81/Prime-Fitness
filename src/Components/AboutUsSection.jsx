@@ -12,7 +12,7 @@ function AboutUsSection() {
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="fade-down">
-        <Link to="/training" className={styles.heading_link}>
+        <Link to="/Prime-Fitness/training" className={styles.heading_link}>
           <h1 className={styles.heading}>Training →</h1>
         </Link>
         <div

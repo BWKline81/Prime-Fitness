@@ -15,16 +15,16 @@ function Footer() {
         </Link>
       </div>
       <div className={styles.nav_wrap}>
-        <Link to="/" className={styles.nav_link}>
+        <Link to="/Prime-Fitness/" className={styles.nav_link}>
           Home
         </Link>
-        <Link to="/training" className={styles.nav_link}>
+        <Link to="/Prime-Fitness/training" className={styles.nav_link}>
           Training
         </Link>
-        <Link to="/coaches" className={styles.nav_link}>
+        <Link to="/Prime-Fitness/coaches" className={styles.nav_link}>
           Coaches
         </Link>
-        <Link to="/contact" className={styles.nav_link}>
+        <Link to="/Prime-Fitness/contact" className={styles.nav_link}>
           Contact
         </Link>
       </div>

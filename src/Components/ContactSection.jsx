@@ -12,7 +12,7 @@ function ContactSection() {
   return (
     <div className={styles.container}>
       <div className={styles.heading_wrap} data-aos="fade-down">
-        <Link to="/contact" className={styles.heading_link}>
+        <Link to="/Prime-Fitness/contact" className={styles.heading_link}>
           <h1 className={styles.heading}>Contact Us →</h1>
         </Link>
         <div
