@@ -8,7 +8,7 @@ function CoachesPageSection(props) {
     AOS.init({ duration: 1000 });
   }, []);
 
-  if (props.side === "left") {
+  if (props.side === "left" && window.innerWidth > 1000) {
     return (
       <div
         className={styles.container}
@@ -25,6 +25,9 @@ function CoachesPageSection(props) {
               autoPlay={true}
               loop={true}
               muted={true}
+              style={{ pointerEvents: "none" }}
+              playsInline={true}
+              webkit-playsinline={true}
             ></video>
           </div>
         </div>
@@ -51,7 +54,7 @@ function CoachesPageSection(props) {
         </div>
       </div>
     );
-  } else if (props.side === "right") {
+  } else if (props.side === "right" || window.innerWidth <= 1000) {
     return (
       <div
         className={styles.container}
@@ -89,6 +92,9 @@ function CoachesPageSection(props) {
               autoPlay={true}
               loop={true}
               muted={true}
+              style={{ pointerEvents: "none" }}
+              playsInline={true}
+              webkit-playsinline={true}
             ></video>
           </div>
         </div>

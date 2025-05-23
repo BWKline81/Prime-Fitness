@@ -2,16 +2,15 @@ import React, { useEffect } from "react";
 import styles from "../Styles/TrainingPageSection.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function TrainingPageSection(props) {
-  const navigate = useNavigate();
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    console.log(window.innerWidth);
   }, []);
 
-  if (props.side === "left") {
+  if (props.side === "left" && window.innerWidth > 1000) {
     return (
       <div
         className={styles.container}
@@ -46,17 +45,14 @@ function TrainingPageSection(props) {
             data-aos-delay="900"
           >
             <p>{props.description}</p>
-            <button
-              className={styles.nav_button}
-              onClick={() => navigate(props.link)}
-            >
-              {props.button_desc}
-            </button>
+            <Link to={props.button_link} className={styles.link}>
+              <button className={styles.nav_button}>{props.button_desc}</button>
+            </Link>
           </div>
         </div>
       </div>
     );
-  } else if (props.side === "right") {
+  } else if (props.side === "right" || window.innerWidth <= 1000) {
     return (
       <div
         className={styles.container}
@@ -81,12 +77,9 @@ function TrainingPageSection(props) {
             data-aos-delay="900"
           >
             <p>{props.description}</p>
-            <button
-              className={styles.nav_button}
-              onClick={() => navigate(props.link)}
-            >
-              {props.button_desc}
-            </button>
+            <Link to={props.button_link} className={styles.link}>
+              <button className={styles.nav_button}>{props.button_desc}</button>
+            </Link>
           </div>
         </div>
         <div

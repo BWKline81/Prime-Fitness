@@ -14,6 +14,7 @@ function CoachesPage() {
   let coach3Ref = useRef(null);
   let coach4Ref = useRef(null);
   let coach5Ref = useRef(null);
+  let coach6Ref = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -114,6 +115,20 @@ function CoachesPage() {
         >
           <h1>Coach</h1>
         </div>
+        <div
+          className={styles.coach_nav}
+          style={{
+            backgroundImage: `url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")`,
+          }}
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          onClick={() => {
+            console.log("clicked");
+            coach6Ref.current.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <h1>Coach</h1>
+        </div>
       </div>
       <div className={styles.CoachesPageSection_wrap} ref={coach1Ref}>
         <CoachesPageSection
@@ -158,6 +173,15 @@ function CoachesPage() {
           description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
           color="rgb(51, 51, 51)"
           side="left"
+        />
+      </div>
+      <div className={styles.CoachesPageSection_wrap} ref={coach6Ref}>
+        <CoachesPageSection
+          video={Template_Video}
+          title="Coach"
+          description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+          color="rgb(27, 27, 27)"
+          side="right"
         />
       </div>
       <Footer />

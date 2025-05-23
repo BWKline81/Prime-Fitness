@@ -30,7 +30,7 @@
 }
 
 .coaches_wraper {
-  height: 100vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -49,4 +49,10 @@
 .buffer {
   background-color: rgb(27, 27, 27);
   height: 30vh;
+}
+
+@media screen and (max-width: 750px) {
+  .about_wrapper {
+    height: 150vh;
+  }
 }

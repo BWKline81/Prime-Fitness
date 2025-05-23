@@ -39,6 +39,9 @@ function LargeImageHeader() {
         autoPlay={true}
         muted={true}
         loop={true}
+        style={{ pointerEvent: "none" }}
+        playsInline={true}
+        webkit-playsinline={true}
       ></video>
       <div className={styles.overlay}>
         <div className={styles.heading_container}>

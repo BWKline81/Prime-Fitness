@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import TrainingPageSection from "../Components/TrainingPageSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ClassImage1 from "../assets/PPT-Class1.jpg";
 
 function TrainingPage() {
   let personalTrainingRef = useRef(null);
@@ -54,8 +55,7 @@ function TrainingPage() {
           <div
             className={styles.intro_section_nav}
             style={{
-              backgroundImage:
-                'url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")',
+              backgroundImage: `url(${ClassImage1})`,
             }}
             data-aos="zoom-in"
             data-aos-delay="1000"
@@ -110,7 +110,7 @@ function TrainingPage() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat."
           color="rgb(27, 27, 27)"
           side="left"
-          image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+          image={ClassImage1}
           button_desc="Join a Class!"
           button_link="https://www.mindbodyonline.com/explore/locations/prime-performance-training"
         />

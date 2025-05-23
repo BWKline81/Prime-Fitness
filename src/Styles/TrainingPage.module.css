@@ -60,6 +60,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .intro_section_nav {
@@ -79,7 +80,7 @@
 }
 
 .intro_section_nav_text {
-  color: black;
+  color: white;
   font-size: 2.5rem;
   font-weight: 600;
   text-decoration: none;
@@ -99,4 +100,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro_section_nav {
+    width: 35%;
+    height: 40%;
+  }
+
+  .intro_section_nav_text {
+    font-size: 2rem;
+  }
+
+  .intro_section_heading_text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro_section_nav {
+    width: 40%;
+    height: 35%;
+  }
+
+  .intro_section_nav_text {
+    font-size: 1.5rem;
+  }
+
+  .intro_section_heading_text {
+    font-size: 2rem;
+  }
 }

@@ -44,11 +44,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .Coach_wrap {
-  height: 80%;
-  width: 20%;
+  height: 45%;
+  width: 21%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,4 +57,59 @@
 
 .heading_link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .Coach_wrap {
+    height: 50%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Coach_wrap {
+    height: 40%;
+    width: 30%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Coach_wrap {
+    height: 35%;
+    width: 30%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Coach_wrap {
+    height: 30%;
+    width: 34%;
+  }
+
+  .heading_wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Coach_wrap {
+    height: 25%;
+    width: 34%;
+  }
+
+  .heading_wrap {
+    width: 80%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
 }

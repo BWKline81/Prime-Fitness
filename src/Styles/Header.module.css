@@ -82,3 +82,45 @@
 .heading:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1000px) {
+  .navbar_link {
+    font-size: 1.2rem;
+  }
+
+  .navbar_link:hover {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar_link {
+    font-size: 1rem;
+  }
+
+  .navbar_link:hover {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    height: 65%;
+  }
+  .navbar {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar_link {
+    font-size: 0.8rem;
+  }
+  .navbar_link:hover {
+    font-size: 1rem;
+  }
+  .heading {
+    height: 60%;
+  }
+  .navbar {
+    width: 30%;
+  }
+}

@@ -57,3 +57,23 @@
   text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
     0 0 10px grey;
 }
+
+@media screen and (max-width: 1350px) {
+  .name {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 0.8em;
+  }
+
+  .description {
+    font-size: 0.6em;
+  }
+}
