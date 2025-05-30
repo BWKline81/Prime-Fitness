@@ -92,8 +92,8 @@
   text-align: center;
   text-shadow: 2px 2px 2px black;
   display: inline-block;
-  word-break: break-all;
   white-space: normal;
+  line-height: 1.5;
 }
 
 .description_wrap p:hover {
@@ -115,6 +115,7 @@
     0 0 10px grey;
   cursor: pointer;
   margin-bottom: 5vh;
+  margin-top: 5vh;
   color: white;
   size: 2rem;
   font-weight: 600;

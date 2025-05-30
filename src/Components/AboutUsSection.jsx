@@ -4,6 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutPart from "./AboutPart";
 import { Link } from "react-router-dom";
+import SportsPhoto from "../assets/Prime_Media/SportsPhoto2.png?url";
+import PersonalTrainingPhoto from "../assets/Prime_Media/PerTraining.jpeg?url";
+import FacilityPhoto from "../assets/Base_Facility_Photo.PNG?url";
 
 function AboutUsSection() {
   useEffect(() => {
@@ -28,9 +31,7 @@ function AboutUsSection() {
           data-aos-delay="300"
         >
           <AboutPart
-            image={
-              "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            }
+            image={SportsPhoto}
             heading="Sports Performance"
             text="We have a passion and
                 specialization in sports
@@ -45,9 +46,7 @@ function AboutUsSection() {
           data-aos-delay="800"
         >
           <AboutPart
-            image={
-              "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            }
+            image={PersonalTrainingPhoto}
             heading="Personal Training"
             text="We offer personal
                 training for everyone.
@@ -62,9 +61,7 @@ function AboutUsSection() {
           data-aos-delay="1300"
         >
           <AboutPart
-            image={
-              "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            }
+            image={FacilityPhoto}
             heading="Facility"
             text="Our facility is state of the
                 art and private so you

@@ -4,6 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Coach from "./Coach";
 import { Link } from "react-router-dom";
+import GarrettPhoto from "../assets/Prime_Media/Garrett.png?url";
+import MitchellPhoto from "../assets/Prime_Media/Mitchell.png?url";
+import NickPhoto from "../assets/Prime_Media/Nick.png?url";
+import KayleighPhoto from "../assets/Prime_Media/Kayleigh.png?url";
+import BobbyPhoto from "../assets/Prime_Media/Bobby.png?url";
 
 function CoachesSection() {
   useEffect(() => {
@@ -29,9 +34,9 @@ function CoachesSection() {
           data-aos-delay="1000"
         >
           <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
+            image={GarrettPhoto}
+            name="Garrett Cumbie"
+            description="Co-Owner"
           />
         </div>
 
@@ -41,9 +46,9 @@ function CoachesSection() {
           data-aos-delay="500"
         >
           <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
+            image={MitchellPhoto}
+            name="Mitchell Jules"
+            description="Co-Owner"
           />
         </div>
 
@@ -53,9 +58,9 @@ function CoachesSection() {
           data-aos-delay="500"
         >
           <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
+            image={NickPhoto}
+            name="Nick La Pierre"
+            description="NASM-CPT"
           />
         </div>
 
@@ -66,8 +71,19 @@ function CoachesSection() {
         >
           <Coach
             image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
+            name="Joey Foucha"
+            description="NASM-CPT"
+          />
+        </div>
+        <div
+          className={styles.Coach_wrap}
+          data-aos="flip-left"
+          data-aos-delay="1000"
+        >
+          <Coach
+            image={BobbyPhoto}
+            name="Bobby Harris"
+            description="NASM-CPT"
           />
         </div>
         <div
@@ -77,19 +93,8 @@ function CoachesSection() {
         >
           <Coach
             image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
-          />
-        </div>
-        <div
-          className={styles.Coach_wrap}
-          data-aos="flip-right"
-          data-aos-delay="1000"
-        >
-          <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
-            name="Coach"
-            description="Description"
+            name="Melissa Hersh"
+            description="NASM-CPT"
           />
         </div>
       </div>

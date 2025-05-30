@@ -5,7 +5,10 @@ import Footer from "../Components/Footer";
 import TrainingPageSection from "../Components/TrainingPageSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ClassImage1 from "../assets/PPT-Class1.jpg";
+import ClassImage1 from "../assets/PPT-Class1.jpg?url";
+import ClassImage2 from "../assets/Prime_Media/SportsPhoto.jpeg?url";
+import PersonalTrainingImage from "../assets/PPT-PT2.png?url";
+import FacilityPhoto from "../assets/Base_Facility_Photo.PNG?url";
 
 function TrainingPage() {
   let personalTrainingRef = useRef(null);
@@ -37,8 +40,7 @@ function TrainingPage() {
           <div
             className={styles.intro_section_nav}
             style={{
-              backgroundImage:
-                'url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")',
+              backgroundImage: `url(${PersonalTrainingImage})`,
             }}
             data-aos="fade-right"
             data-aos-delay="500"
@@ -72,8 +74,7 @@ function TrainingPage() {
           <div
             className={styles.intro_section_nav}
             style={{
-              backgroundImage:
-                'url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")',
+              backgroundImage: `url(${FacilityPhoto})`,
             }}
             data-aos="fade-left"
             data-aos-delay="500"
@@ -95,10 +96,11 @@ function TrainingPage() {
       >
         <TrainingPageSection
           title="Personal Training"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat."
+          description="At Prime Performance Training, private personal training is more than just a workout—it's a tailored experience designed to help you reach your goals with expert guidance and unwavering support. With a focus on personalized attention, every session is built around your needs, pushing you to perform at your best in a motivating and professional environment. Whether you're a beginner or an experienced athlete, our coaches have the expertise and dedication to help you achieve your goals!
+"
           color="rgb(54, 54, 54)"
           side="right"
-          image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+          image={PersonalTrainingImage}
           button_desc="Schedule a Personal Training Session!"
           button_link="https://www.mindbodyonline.com/explore/locations/prime-performance-training"
         />
@@ -107,10 +109,10 @@ function TrainingPage() {
       <div className={styles.TrainingPageSection_wrap} ref={classesRef}>
         <TrainingPageSection
           title="Classes"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat."
+          description="The classes at Prime Performance Training offer an energetic, results-driven environment where community and challenge go hand in hand. Led by skilled coaches, each class is designed to maximize your performance, build strength, and improve overall fitness. Surrounded by a supportive group and expert guidance, you'll stay motivated, inspired, and consistently progressing toward your goals."
           color="rgb(27, 27, 27)"
           side="left"
-          image={ClassImage1}
+          image={ClassImage2}
           button_desc="Join a Class!"
           button_link="https://www.mindbodyonline.com/explore/locations/prime-performance-training"
         />
@@ -119,10 +121,10 @@ function TrainingPage() {
       <div className={styles.TrainingPageSection_wrap} ref={facilityRef}>
         <TrainingPageSection
           title="Facility"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat."
+          description="The private facility at Prime Performance Training is designed for focus, comfort, and high-level performance. Equipped with top-tier equipment, ranging from squat racks and free weights, to hurdles and an open turf area, it offers the ideal space to train without the distractions of a crowded gym. This exclusive environment allows you to fully concentrate on your goals with the support and privacy you need to succeed."
           color="rgb(54, 54, 54)"
           side="right"
-          image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+          image={FacilityPhoto}
           button_desc="Learn more about our facility!"
           button_link="https://www.instagram.com/primeperformanceclub/reel/C5HHccDurA_/"
         />

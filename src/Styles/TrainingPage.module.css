@@ -84,6 +84,12 @@
   font-size: 2.5rem;
   font-weight: 600;
   text-decoration: none;
+  height: 35%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro_section_nav:hover {
@@ -92,6 +98,7 @@
     0 0 10px grey;
   border: 2px solid black;
   cursor: pointer;
+  filter: brightness(0.9);
 }
 
 .TrainingPageSection_wrap {

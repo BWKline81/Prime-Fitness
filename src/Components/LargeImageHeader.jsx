@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "../Styles/LargeImageHeader.module.css";
 import TemplateVideo from "../assets/Template_Video.mp4";
+import MainVideo from "../assets/Main_Video.mp4";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,7 +36,7 @@ function LargeImageHeader() {
   return (
     <div className="large_image_container" id="large_image_container">
       <video
-        src={TemplateVideo}
+        src={MainVideo}
         autoPlay={true}
         muted={true}
         loop={true}
