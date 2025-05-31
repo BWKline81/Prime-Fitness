@@ -1,7 +1,12 @@
 import styles from "../Styles/404.module.css";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function NotFound() {
+  useEffect(() => {
+    document.title = "404 - Page Not Found";
+  }, []);
+
   const navigate = useNavigate();
 
   return (

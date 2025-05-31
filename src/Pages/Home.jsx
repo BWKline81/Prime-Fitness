@@ -28,7 +28,7 @@ function Home() {
   const contactRefContext = { contactRef };
 
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Prime Performance | Home";
     setLoaded(true);
     AOS.init({ duration: 1000 });
 
@@ -51,32 +51,40 @@ function Home() {
         <AboutContext.Provider value={aboutRefContext}>
           <HomeContext.Provider value={homeRefContext}>
             <div className={styles.container}>
-              <div
-                className={styles.header_wrapper}
-                data-aos="fade-down"
-                data-aos-delay="500"
-              >
-                <Header />
-              </div>
-              <div
-                className={styles.large_image_wrapper}
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                ref={homeRef}
-              >
-                <LargeImageHeader />
-              </div>
-              <div className={styles.about_wrapper} ref={aboutRef}>
-                <AboutUsSection />
-              </div>
-              <div className={styles.coaches_wraper} ref={coachesRef}>
-                <CoachesSection />
-              </div>
-              <div className={styles.contact_wrapper} ref={contactRef}>
-                <ContactSection />
-              </div>
+              <nav>
+                <div
+                  className={styles.header_wrapper}
+                  data-aos="fade-down"
+                  data-aos-delay="500"
+                >
+                  <Header />
+                </div>
+              </nav>
+              <header>
+                <div
+                  className={styles.large_image_wrapper}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  ref={homeRef}
+                >
+                  <LargeImageHeader />
+                </div>
+              </header>
+              <main>
+                <div className={styles.about_wrapper} ref={aboutRef}>
+                  <AboutUsSection />
+                </div>
+                <div className={styles.coaches_wraper} ref={coachesRef}>
+                  <CoachesSection />
+                </div>
+                <div className={styles.contact_wrapper} ref={contactRef}>
+                  <ContactSection />
+                </div>
+              </main>
               <div className={styles.buffer}></div>
-              <Footer />
+              <footer>
+                <Footer />
+              </footer>
             </div>
           </HomeContext.Provider>
         </AboutContext.Provider>
