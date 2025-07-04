@@ -9,6 +9,7 @@ import ClassImage1 from "../assets/PPT-Class1.jpg?url";
 import ClassImage2 from "../assets/Prime_Media/SportsPhoto.jpeg?url";
 import PersonalTrainingImage from "../assets/PPT-PT2.png?url";
 import FacilityPhoto from "../assets/Base_Facility_Photo.PNG?url";
+import FacilityPhoto2 from "../assets/Facility.jpg?url";
 
 function TrainingPage() {
   let personalTrainingRef = useRef(null);
@@ -132,7 +133,7 @@ function TrainingPage() {
             description="The private facility at Prime Performance Training is designed for focus, comfort, and high-level performance. Equipped with top-tier equipment, ranging from squat racks and free weights, to hurdles and an open turf area, it offers the ideal space to train without the distractions of a crowded gym. This exclusive environment allows you to fully concentrate on your goals with the support and privacy you need to succeed."
             color="rgb(54, 54, 54)"
             side="right"
-            image={FacilityPhoto}
+            image={FacilityPhoto2}
             button_desc="Learn more about our facility!"
             button_link="https://www.instagram.com/primeperformanceclub/reel/C5HHccDurA_/"
           />

@@ -11,6 +11,7 @@ import GarretPhoto from "../assets/Prime_Media/Garrett.png?url";
 import MitchellPhoto from "../assets/Prime_Media/Mitchell.png?url";
 import NickPhoto from "../assets/Prime_Media/Nick.png?url";
 import BobbyPhoto from "../assets/Prime_Media/Bobby.png?url";
+import Template_Photo from "../assets/Template Image.png?url"; // Placeholder image
 
 function CoachesPage() {
   let coach1Ref = useRef(null);
@@ -104,7 +105,7 @@ function CoachesPage() {
           <div
             className={styles.coach_nav}
             style={{
-              backgroundImage: `url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")`,
+              backgroundImage: `url(${Template_Photo})`, // Placeholder image})`,
             }}
             data-aos="fade-down-left"
             data-aos-delay="1000"
@@ -136,7 +137,7 @@ function CoachesPage() {
           <div
             className={styles.coach_nav}
             style={{
-              backgroundImage: `url("https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1")`,
+              backgroundImage: `url(${Template_Photo})`, // Placeholder image
             }}
             data-aos="fade-up"
             data-aos-delay="1000"
@@ -154,7 +155,7 @@ function CoachesPage() {
       <main>
         <div className={styles.CoachesPageSection_wrap} ref={coach1Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Garrett Cumbie"
             description={
               "Coach Garrett is a Co-Founder of Prime Performance. He grew up in Wildwood, Florida and attended Wildwood High School. Coach Garrett has a passion for helping others and helped start Prime Performance to bring a unique, private training facility to the area and train people from all across the world. He specializes in Sports Performance, Functional Training, Weight Loss, and Recovery!"
@@ -165,45 +166,45 @@ function CoachesPage() {
         </div>
         <div className={styles.CoachesPageSection_wrap} ref={coach2Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Mitchell Jules"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+            description=" Description in Progress "
             color="rgb(27, 27, 27)"
             side="right"
           />
         </div>
         <div className={styles.CoachesPageSection_wrap} ref={coach3Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Nick La Pierre"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+            description=" Description in Progress. "
             color="rgb(51, 51, 51)"
             side="left"
           />
         </div>
         <div className={styles.CoachesPageSection_wrap} ref={coach4Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Joey Foucha"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+            description=" Description in Progress "
             color="rgb(27, 27, 27)"
             side="right"
           />
         </div>
         <div className={styles.CoachesPageSection_wrap} ref={coach5Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Bobby Harris"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+            description=" Bobby Harris is a Villager living in Spanisih Springs and a coach of The Villages Charter High School Boys Tennis Team. He is also a Blackheart Dragon Boat team member and a 2011 Boston Marathon finisher. Bobby is NASM certified and is also an ISSA health coach, nutritionist, and senior fitness specialist. He specializes in functional movement, sports training, prehab and rehab for joint surgery, and training with clients with Parkinson's and stroke recovery, and is available for at home or on the court training!"
             color="rgb(51, 51, 51)"
             side="left"
           />
         </div>
         <div className={styles.CoachesPageSection_wrap} ref={coach6Ref}>
           <CoachesPageSection
-            video={Template_Video}
+            video={Template_Photo}
             title="Melissa Hersh"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl ut felis rhoncus molestie. Nunc ut sagittis purus, a tincidunt metus. Cras consequat turpis in sagittis viverra. Nullam diam risus, dapibus et facilisis scelerisque, sodales nec justo. Cras in justo sapien. Cras id consectetur lacus. Vestibulum aliquet neque et tincidunt imperdiet. Sed posuere, urna ut facilisis finibus, lacus lectus ornare metus, semper tempus eros erat sed massa. Praesent eget ex vitae sem tincidunt placerat. "
+            description=" Description in Progress "
             color="rgb(27, 27, 27)"
             side="right"
           />

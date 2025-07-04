@@ -28,6 +28,7 @@ function CoachesPageSection(props) {
               style={{ pointerEvents: "none" }}
               playsInline={true}
               webkit-playsinline={true}
+              alt="Video Coming Soon"
             ></video>
           </div>
         </div>

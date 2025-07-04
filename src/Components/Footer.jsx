@@ -28,6 +28,7 @@ function Footer() {
           Contact
         </Link>
       </div>
+
       <div className={styles.copyright_wrap}>
         <p className={styles.copyright}>© Prime Performance Training 2025</p>
       </div>

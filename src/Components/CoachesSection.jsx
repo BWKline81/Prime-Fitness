@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import GarrettPhoto from "../assets/Prime_Media/Garrett.png?url";
 import MitchellPhoto from "../assets/Prime_Media/Mitchell.png?url";
 import NickPhoto from "../assets/Prime_Media/Nick.png?url";
-import KayleighPhoto from "../assets/Prime_Media/Kayleigh.png?url";
+import templateImage from "../assets/Template Image.png?url"; // Placeholder image
 import BobbyPhoto from "../assets/Prime_Media/Bobby.png?url";
 
 function CoachesSection() {
@@ -70,7 +70,7 @@ function CoachesSection() {
           data-aos-delay="1000"
         >
           <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            image={templateImage}
             name="Joey Foucha"
             description="NASM-CPT"
           />
@@ -92,7 +92,7 @@ function CoachesSection() {
           data-aos-delay="1000"
         >
           <Coach
-            image="https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"
+            image={templateImage}
             name="Melissa Hersh"
             description="NASM-CPT"
           />
