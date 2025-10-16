@@ -25,6 +25,33 @@
   background-position: center;
 }
 
+.mute_btn {
+  position: absolute;
+  bottom: 27.5%;
+  right: 12.5%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mute_btn i {
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mute_btn i:hover {
+  transform: scale(1.2);
+  color: grey;
+}
+
+.mute_btn i:active {
+  transform: scale(1.2);
+  color: red;
+}
+
 .video video {
   object-fit: cover;
   object-position: center;

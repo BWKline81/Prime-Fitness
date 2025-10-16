@@ -30,8 +30,8 @@
 }
 
 .coach_nav {
-  height: 45%;
-  width: 20%;
+  height: 60%;
+  width: 25%;
   display: flex;
   justify-content: end;
   flex-direction: column;

@@ -67,14 +67,16 @@
   height: 33%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   color: white;
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px black;
 }
 
-.copyright_wrap p:hover {
+.copyright_wrap p:hover,
+.copyright:hover {
   transform: scale(1.1);
   text-shadow: 0 0 2px grey, 0 0 4px grey, 0 0 6px grey, 0 0 8px grey,
     0 0 10px grey;
@@ -99,7 +101,8 @@
     font-size: 2.5rem;
   }
 
-  .copyright_wrap p {
+  .copyright_wrap p,
+  .copyright {
     font-size: 1.2rem;
   }
 }
@@ -117,7 +120,8 @@
     font-size: 2rem;
   }
 
-  .copyright_wrap p {
+  .copyright_wrap p,
+  .copyright {
     font-size: 1rem;
   }
 }

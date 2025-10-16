@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../Styles/CoachesPageSection.module.css";
@@ -7,6 +7,8 @@ function CoachesPageSection(props) {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  let [ismute, setIsMute] = useState(true);
 
   if (props.side === "left" && window.innerWidth > 1000) {
     return (
@@ -24,12 +26,25 @@ function CoachesPageSection(props) {
               src={props.video}
               autoPlay={true}
               loop={true}
-              muted={true}
+              muted={ismute}
               style={{ pointerEvents: "none" }}
               playsInline={true}
               webkit-playsinline={true}
               alt="Video Coming Soon"
             ></video>
+            <button
+              className={styles.mute_btn}
+              onClick={() => setIsMute(!ismute)}
+            >
+              <i
+                className={
+                  ismute
+                    ? "fa-solid fa-volume-xmark"
+                    : "fa-solid fa-volume-high"
+                }
+                style={{ color: ismute ? "red" : "green" }}
+              ></i>
+            </button>
           </div>
         </div>
         <div className={styles.content}>
@@ -38,7 +53,7 @@ function CoachesPageSection(props) {
             data-aos="fade-down"
             data-aos-delay="500"
           >
-            <h1>{props.title}</h1>
+            <h1>{props.name}</h1>
             <div
               className={styles.line}
               data-aos="fade-up"
@@ -67,7 +82,7 @@ function CoachesPageSection(props) {
             data-aos="fade-down"
             data-aos-delay="500"
           >
-            <h1>{props.title}</h1>
+            <h1>{props.name}</h1>
             <div
               className={styles.line}
               data-aos="fade-up"
@@ -97,6 +112,19 @@ function CoachesPageSection(props) {
               playsInline={true}
               webkit-playsinline={true}
             ></video>
+            <button
+              className={styles.mute_btn}
+              onClick={() => setIsMute(!ismute)}
+            >
+              <i
+                className={
+                  ismute
+                    ? "fa-solid fa-volume-xmark"
+                    : "fa-solid fa-volume-high"
+                }
+                style={{ color: ismute ? "#FC6565" : "#82FF75" }}
+              ></i>
+            </button>
           </div>
         </div>
       </div>

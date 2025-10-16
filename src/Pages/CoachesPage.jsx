@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../Styles/CoachesPage.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +12,8 @@ import MitchellPhoto from "../assets/Prime_Media/Mitchell.png?url";
 import NickPhoto from "../assets/Prime_Media/Nick.png?url";
 import BobbyPhoto from "../assets/Prime_Media/Bobby.png?url";
 import Template_Photo from "../assets/Template Image.png?url"; // Placeholder image
+import NickVideo from "../assets/Nick Intro Prime.mp4";
+import BobbyVideo from "../assets/Prime Bobby Intro.mp4";
 
 function CoachesPage() {
   let coach1Ref = useRef(null);
@@ -26,6 +28,79 @@ function CoachesPage() {
     document.title = "Prime Performance | Coaches";
     AOS.init({ duration: 1000 });
   }, []);
+
+  let [coachesList, setCoachesList] = useState([
+    {
+      id: 1,
+      ref: coach1Ref,
+      name: "Garret Cumbie",
+      photo: GarretPhoto,
+      video: Template_Photo,
+      description:
+        "Coach Garrett is a Co-Founder of Prime Performance. He grew up in Wildwood, Florida and attended Wildwood High School. Coach Garrett has a passion for helping others and helped start Prime Performance to bring a unique, private training facility to the area and train people from all across the world. He specializes in Sports Performance, Functional Training, Weight Loss, and Recovery!",
+      color: "rgb(51, 51, 51)",
+      side: "left",
+      fade: "fade-down-right",
+    },
+    {
+      id: 2,
+      ref: coach2Ref,
+      name: "Mitchell Jules",
+      photo: MitchellPhoto,
+      video: Template_Photo,
+      description: " Description Coming Soon ",
+      color: "rgb(27, 27, 27)",
+      side: "right",
+      fade: "fade-down-right",
+    },
+    /*
+    {
+      id: 3,
+      ref: coach3Ref,
+      name: "Nick La Pierre",
+      photo: NickPhoto,
+      video: NickVideo,
+      description: " Description Coming Soon ",
+      color: "rgb(51, 51, 51)",
+      side: "left",
+      fade: "fade-down-left",
+    },
+    {
+      id: 4,
+      ref: coach4Ref,
+      name: "Joey Foucha",
+      photo: Template_Photo, // Placeholder image
+      video: Template_Photo,
+      description: " Description Coming Soon ",
+      color: "rgb(27, 27, 27)",
+      side: "right",
+      fade: "fade-down-left",
+    },
+    {
+      id: 5,
+      ref: coach5Ref,
+      name: "Bobby Harris",
+      photo: BobbyPhoto,
+      video: BobbyVideo,
+      description:
+        " Bobby Harris is a Villager living in Spanisih Springs and a coach of The Villages Charter High School Boys Tennis Team. He is also a Blackheart Dragon Boat team member and a 2011 Boston Marathon finisher. Bobby is NASM certified and is also an ISSA health coach, nutritionist, and senior fitness specialist. He specializes in functional movement, sports training, prehab and rehab for joint surgery, and training with clients with Parkinson's and stroke recovery, and is available for at home or on the court training!",
+      color: "rgb(51, 51, 51)",
+      side: "left",
+      fade: "fade-up-right",
+    },
+    {
+      id: 6,
+      ref: coach6Ref,
+      name: "Melissa Hersh",
+      photo: Template_Photo, // Placeholder image
+      video: Template_Photo,
+      description: " Description Coming Soon ",
+      color: "rgb(27, 27, 27)",
+      side: "right",
+      fade: "fade-up-left",
+    },
+    */
+  ]);
 
   return (
     <div className={styles.container}>
@@ -54,161 +129,40 @@ function CoachesPage() {
           ></div>
         </div>
         <div className={styles.nav_section_container}>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${GarretPhoto})`,
-            }}
-            data-aos="fade-down-right"
-            data-aos-delay="1000"
-            onClick={() => {
-              console.log("clicked");
-              coach1Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Garrett Cumbie"
-          >
-            <h1>Garrett Cumbie</h1>
-          </div>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${MitchellPhoto})`,
-            }}
-            data-aos="fade-down-right"
-            data-aos-delay="500"
-            onClick={() => {
-              console.log("clicked");
-              coach2Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Mitchell Jules"
-          >
-            <h1>Mitchell Jules</h1>
-          </div>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${NickPhoto})`,
-            }}
-            data-aos="fade-down-left"
-            data-aos-delay="500"
-            onClick={() => {
-              console.log("clicked");
-              coach3Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Nick La Pierre"
-          >
-            <h1>Nick La Pierre</h1>
-          </div>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${Template_Photo})`, // Placeholder image})`,
-            }}
-            data-aos="fade-down-left"
-            data-aos-delay="1000"
-            onClick={() => {
-              console.log("clicked");
-              coach4Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Joey Foucha"
-          >
-            <h1>Joey Foucha</h1>
-          </div>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${BobbyPhoto})`,
-            }}
-            data-aos="fade-up"
-            data-aos-delay="1000"
-            onClick={() => {
-              console.log("clicked");
-              coach5Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Bobby Harris"
-          >
-            <h1>Bobby Harris</h1>
-          </div>
-          <div
-            className={styles.coach_nav}
-            style={{
-              backgroundImage: `url(${Template_Photo})`, // Placeholder image
-            }}
-            data-aos="fade-up"
-            data-aos-delay="1000"
-            onClick={() => {
-              console.log("clicked");
-              coach6Ref.current.scrollIntoView({ behavior: "smooth" });
-            }}
-            role="img"
-            aria-label="Image of Melissa Hersh"
-          >
-            <h1>Melissa Hersh</h1>
-          </div>
+          {coachesList.map((coach, index) => (
+            <div
+              className={styles.coach_nav}
+              key={coach.id}
+              style={{ backgroundImage: `url(${coach.photo})` }}
+              data-aos={coach.fade}
+              data-aos-delay={750 + index * 100}
+              onClick={() => {
+                coach.ref.current.scrollIntoView({ behavior: "smooth" });
+              }}
+              role="img"
+              aria-label={`Image of ${coach.name}`}
+            >
+              <h1>{coach.name}</h1>
+            </div>
+          ))}
         </div>
       </header>
       <main>
-        <div className={styles.CoachesPageSection_wrap} ref={coach1Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Garrett Cumbie"
-            description={
-              "Coach Garrett is a Co-Founder of Prime Performance. He grew up in Wildwood, Florida and attended Wildwood High School. Coach Garrett has a passion for helping others and helped start Prime Performance to bring a unique, private training facility to the area and train people from all across the world. He specializes in Sports Performance, Functional Training, Weight Loss, and Recovery!"
-            }
-            color="rgb(51, 51, 51)"
-            side="left"
-          />
-        </div>
-        <div className={styles.CoachesPageSection_wrap} ref={coach2Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Mitchell Jules"
-            description=" Description in Progress "
-            color="rgb(27, 27, 27)"
-            side="right"
-          />
-        </div>
-        <div className={styles.CoachesPageSection_wrap} ref={coach3Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Nick La Pierre"
-            description=" Description in Progress. "
-            color="rgb(51, 51, 51)"
-            side="left"
-          />
-        </div>
-        <div className={styles.CoachesPageSection_wrap} ref={coach4Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Joey Foucha"
-            description=" Description in Progress "
-            color="rgb(27, 27, 27)"
-            side="right"
-          />
-        </div>
-        <div className={styles.CoachesPageSection_wrap} ref={coach5Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Bobby Harris"
-            description=" Bobby Harris is a Villager living in Spanisih Springs and a coach of The Villages Charter High School Boys Tennis Team. He is also a Blackheart Dragon Boat team member and a 2011 Boston Marathon finisher. Bobby is NASM certified and is also an ISSA health coach, nutritionist, and senior fitness specialist. He specializes in functional movement, sports training, prehab and rehab for joint surgery, and training with clients with Parkinson's and stroke recovery, and is available for at home or on the court training!"
-            color="rgb(51, 51, 51)"
-            side="left"
-          />
-        </div>
-        <div className={styles.CoachesPageSection_wrap} ref={coach6Ref}>
-          <CoachesPageSection
-            video={Template_Photo}
-            title="Melissa Hersh"
-            description=" Description in Progress "
-            color="rgb(27, 27, 27)"
-            side="right"
-          />
-        </div>
+        {coachesList.map((coach, index) => (
+          <div
+            className={styles.CoachesPageSection_wrap}
+            ref={coach.ref}
+            key={coach.id}
+          >
+            <CoachesPageSection
+              video={coach.video}
+              name={coach.name}
+              description={coach.description}
+              color={coach.color}
+              side={coach.side}
+            />
+          </div>
+        ))}
       </main>
       <footer>
         <Footer />

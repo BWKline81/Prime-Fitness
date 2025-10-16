@@ -30,7 +30,15 @@ function Footer() {
       </div>
 
       <div className={styles.copyright_wrap}>
-        <p className={styles.copyright}>© Prime Performance Training 2025</p>
+        <Link
+          to="https://www.freeprivacypolicy.com/live/a778ea9a-51ca-4f28-b690-bbb942f5ef78"
+          className={styles.copyright}
+          style={{ textDecoration: "underline", color: "white" }}
+          target="_blank"
+        >
+          Privacy Policy
+        </Link>
+        <p className={styles.copyright}>© Prime Performance Training 2025 </p>
       </div>
     </div>
   );

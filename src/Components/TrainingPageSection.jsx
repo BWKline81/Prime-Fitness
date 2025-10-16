@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 function TrainingPageSection(props) {
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    console.log(window.innerWidth);
   }, []);
 
   if (props.side === "left" && window.innerWidth > 1000) {
@@ -45,7 +44,11 @@ function TrainingPageSection(props) {
             data-aos-delay="900"
           >
             <p>{props.description}</p>
-            <Link to={props.button_link} className={styles.link}>
+            <Link
+              to={props.button_link}
+              className={styles.link}
+              target="_blank"
+            >
               <button className={styles.nav_button}>{props.button_desc}</button>
             </Link>
           </div>
@@ -77,7 +80,11 @@ function TrainingPageSection(props) {
             data-aos-delay="900"
           >
             <p>{props.description}</p>
-            <Link to={props.button_link} className={styles.link}>
+            <Link
+              to={props.button_link}
+              className={styles.link}
+              target="_blank"
+            >
               <button className={styles.nav_button}>{props.button_desc}</button>
             </Link>
           </div>

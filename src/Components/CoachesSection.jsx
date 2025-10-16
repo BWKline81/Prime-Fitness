@@ -52,7 +52,7 @@ function CoachesSection() {
           />
         </div>
 
-        <div
+        {/*<div
           className={styles.Coach_wrap}
           data-aos="flip-right"
           data-aos-delay="500"
@@ -97,6 +97,7 @@ function CoachesSection() {
             description="NASM-CPT"
           />
         </div>
+        */}
       </div>
     </div>
   );
